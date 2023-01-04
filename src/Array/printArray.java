@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class printArray {
     public static void main(String[] args) {
-        printArray();
+        print();
     }
-    public static void printArray(){
+    public static void print(){
         int[] array=new int[5];
 
         Scanner sc=new Scanner(System.in);
