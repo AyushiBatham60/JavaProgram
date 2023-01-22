@@ -5,6 +5,12 @@ import java.util.Arrays;
 public class rotateArray {
     public static void main(String[] args) {
         int[] arr={10,20,30,40,50,60};
+        int n=1011;
+        String copy=Integer.toString(n);
+        StringBuilder input1 = new StringBuilder();
+        input1.append(copy);
+        input1.reverse();
+        System.out.println(Integer.parseInt(input1.toString(),2));
         rotate_method_1(arr,4);
         System.out.println(Arrays.toString(arr));
 
