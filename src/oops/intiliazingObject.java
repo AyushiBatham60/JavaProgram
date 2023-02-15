@@ -31,6 +31,7 @@ public class intiliazingObject {
          ob2.initial(2,"batham");
          System.out.println(ob2.id+" "+ob2.name);
 
+
          intiliazingObject ob3=new intiliazingObject(3,"ax");
          System.out.println(ob3.id+" "+ob3.name);
      }
