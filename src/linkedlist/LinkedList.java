@@ -1,4 +1,4 @@
-package src;
+package src.linkedlist;
 
 public class LinkedList {
     static class Node{
