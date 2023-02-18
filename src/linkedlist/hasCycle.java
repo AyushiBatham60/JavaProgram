@@ -17,6 +17,7 @@ public class hasCycle {
     public boolean hasCycle(ListNode head) {
         ListNode slow=head;
         ListNode fast=head;
+
         while(fast!=null && fast.next!=null){
             if(slow.next==fast.next.next){
                 return true;
@@ -28,7 +29,5 @@ public class hasCycle {
     }
 
 
-    public static void main(String[] args) {
 
-    }
 }
