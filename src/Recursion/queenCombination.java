@@ -9,7 +9,9 @@ import java.util.Scanner;
 
 public class queenCombination {
 
+    public static void main(String[] args) {
 
+    }
     public static void Queen_comb2D_wrt_Box(boolean[][] board, int row, int col, int placed_Q, int total_Q,
                                             String ans) {
         if (total_Q == placed_Q) { // +ve
