@@ -3,16 +3,24 @@ package src.Recursion;
 public class happyNumbers {
 
     public static void main(String[] args) {
-        happynum("",2,-1);
+        System.out.println(happynum(17));
     }
-    public  static  void happynum(String curr,int n,int last){
-        if(n==0){
-            System.out.println(curr);
-            return;
+    public  static  boolean happynum(int n){
+        if(n==1 || n==7){
+            return true;
+        }
+        if(n<10){
+            return  false;
         }
 
-        for (int i = last+1; i <=9 ; i++) {
-            happynum(curr+i,n-1,i);
+        int sum=0;
+        while (n>0){
+            int digit=n%10;
+            n=n/10;
+            sum=sum+digit*digit;
         }
+        return happynum(sum);
+
+
     }
 }
